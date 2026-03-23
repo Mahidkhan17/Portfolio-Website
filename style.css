@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  /*  background-color: rgb(30, 2, 52); */
+  background-image: linear-gradient(to right, rgb(33, 2, 76), rgb(52, 7, 188));
+  color: white;
+  padding: 18px 0;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+nav ul {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+
+}
+
+nav ul li {
+  list-style-type: none;
+  font-size: 18px;
+}
+nav ul li a{
+   color: white;
+   text-decoration: none;
+}
+nav ul li a:hover{
+   color: rgb(180, 128, 235);
+   text-decoration: none;
+   transition: all;
+}
+
+.hero {
+  background-image: linear-gradient(to right, rgb(175, 242, 242), rgb(68, 173, 219));
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  gap: 130px;
+  align-items: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.heroleft .one {
+
+  font-size: 60px;
+  color: rgb(33, 2, 76);
+  font-weight: bolder;
+}
+
+.heroleft .two {
+
+  font-size: 40px;
+  color: rgb(33, 2, 76);
+  font-weight: bolder;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.heroright img {
+  width: 400px;
+  /* control image width */
+  height: auto;
+  /* keep proportions */
+  border-radius: 14px;
+  object-fit: cover;
+  max-width: 100%;
+  /* make it responsive */
+}
+
+.btn {
+  background-color: purple;
+  color: white;
+  padding: 7px 9px;
+  margin: 0 2px;
+  border: 2px solid purple;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bolder;
+  transition: all 0.5s;
+
+}
+
+.buttonContainer {
+
+  padding: 9px 0;
+}
+
+.project-image img {
+  width: 49.5vw;
+  padding: 69px 12px;
+  border-radius: 250px;
+
+
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: linear-gradient(to right, rgb(198, 222, 233), rgb(13, 207, 224));
+  border: 2px solid hsl(244, 84%, 77%);
+  padding: 22px 0;
+   
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  padding: 42px;
+
+}
+
+.project-info .text {
+  font-size: 27px;
+  font-weight: bold;
+  padding: 10px 0;
+
+}
+
+.project-info p {
+  padding: 12px 0;
+}
+.row-reverse{
+        flex-direction: row-reverse;
+}
+.heroleft{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+footer
+{
+    background-color: rgb(32, 5, 92);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;;
+
+}
+.btn:hover{
+  background-color: rgb(76, 47, 235);
+}
+@media  screen and (max-width: 950px) {
+   nav{
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+   }
+   .hero{
+    flex-direction: column-reverse;
+    gap: 12px;
+   }
+   .heroleft{
+    align-items: center;
+
+   }
+   .project{
+    padding: 1px;
+   } 
+}
+
+@media  screen and (max-width: 650px){
+  .heroleft .one{
+    font-size: 40px;
+    text-align: center;
+  }
+  .heroleft .two{
+    font-size: 30px;
+    text-align: center;
+  }
+  .project{
+    flex-direction: column;
+  }
+  .project-image img{
+    width: 80vw;
+    margin: 5px  35px;
+  }
+  .project-info{
+    padding: 15px 23px;
+  }
+  
+}
